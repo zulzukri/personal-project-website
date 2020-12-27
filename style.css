@@ -1,0 +1,87 @@
+<style type="text/css">
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: century gothic;
+}	
+
+body{
+	background-color: lightcoral
+
+
+}
+
+ul {
+	list-style-type: none;
+	float: right;
+	margin-top: 20px;	
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a {
+	text-decoration: none;
+	color: white;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s;
+	font-family: 'Hanalei Fill', cursive;
+}
+
+ul li a:hover {
+	background-color: white;
+	color: black
+}
+
+ul li.active a {
+	background-color: white;
+	color: black;
+}
+.img {
+	background-image: : url(pic1.jpg) no-repeat center center fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size: cover;
+}
+.main {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.title {
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);-
+}
+
+.title h1 {
+	color: white;
+	font-size: 66px;
+	text-decoration: underline;
+	font-family: 'Langar', cursive;
+}
+
+.button {
+	position: absolute;
+	top: 65%;
+	left: 50%
+	color: white;
+	transform: translate(-50%, -50%);
+}
+
+.btn {
+	border: 1px solid white;
+	padding: 10px 20px;
+	color: white;
+	text-decoration: none;
+	transition: 0.6s;
+}
+
+.btn:hover {
+	background-color: white;
+	color: black;
+}
