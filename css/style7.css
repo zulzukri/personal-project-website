@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Century Gothic;
+}
+
+body{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../pic1.jpg);
+  height: 30vh;
+  
+}
+ul{
+  float: right;
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+ul li{
+  display: inline-block;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #000;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 1.3s ease;
+  margin-right: -10px;
+}
+
+ul li a:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+ul li.active a{
+  background-color: #fff;
+  color: #000;
+}
+
+.main{
+  max-width: 1200px;
+  margin: right;
+}
+
+.title{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.title h1{
+  color: #fff;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  font-size: 60px;
+  animation: scale-in 1.3s ease-out;
+}
+
+.bar{
+  width: 100%;
+  height: 100px;
+  background-color: #000;
+  opacity: 0.4;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 23%;
+  position: absolute;
+  animation: roll-out 1.2s ease-out;
+}
+
+@keyframes scale-in{
+  0%{
+    transform: scale(3,3); opacity: 0;
+  }
+  100%{
+    transform: scale(1,1); opacity: 1;
+  }
+}
+@keyframes roll-out{
+  0%{
+    width:  0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+p{
+  font-family: 'Yanone+Kaffeesatz', cursive; 
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 30px;
+  font-size: 20px;
+}
+
+.copyright{
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.container .box{
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s all;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+  line-height: 0;
+}
+
+.container .box > img{
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover;
+  transition: 0.5s all;
+}
+
+.container .box > span{
+ display: block;
+ text-align: center;
+ height: 10vh;
+ line-height: 2.6;
+ font-size: 3.8vh;
+}
+
+.container .box:hover{
+  flex: 1 1 50%;
+}
+
+.container .box:hover img{
+  width: 100%;
+  height: 100%;
+}
+
+span{
+  color: #fff;
+  font-family: 'Yanone+Kaffeesatz', cursive;
+}
